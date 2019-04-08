@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+            android:id="@+id/nav_login"
+            android:icon="@drawable/baseline_accessibility_black_18dp"
+            android:title="@string/login"/>
+
+    <item
+            android:id="@+id/nav_fantasic"
+            android:icon="@drawable/baseline_accessible_black_18dp"
+            android:title="@string/app_name"/>
+
+</menu>
