@@ -3,4 +3,11 @@
     <color name="colorPrimary">#008577</color>
     <color name="colorPrimaryDark">#00574B</color>
     <color name="colorAccent">#D81B60</color>
+    <color name="white">#FFFFFF</color>
+    <color name="white1">#90FFFFFF</color>
+    <color name="white2">#ABFFFFFF</color>
+    <color name="white3">#D9FFFFFF</color>
+    <color name="nobel">#979797</color>
+    <color name="gains_bo_ro">#e2e2e2</color>
+    <color name="bgBottomNavigation">#fe485a</color>
 </resources>
