@@ -12,11 +12,12 @@ import android.widget.Toast
 import androidx.recyclerview.widget.LinearLayoutManager
 import hailm.com.fantasic.R
 import hailm.com.fantasic.adapter.TopicAdapter
+import hailm.com.fantasic.base.BaseFragment
 import hailm.com.fantasic.listener.OnClickTopicListener
 import hailm.com.fantasic.models.Topic
 import kotlinx.android.synthetic.main.fragment_demo1.*
 
-class Demo1Fragment : Fragment(), OnClickTopicListener {
+class Demo1Fragment : BaseFragment(), OnClickTopicListener {
 
     private var listTopic = ArrayList<Topic>()
 
@@ -44,5 +45,6 @@ class Demo1Fragment : Fragment(), OnClickTopicListener {
 
     override fun onItemClick(topic: String) {
         Toast.makeText(context, topic, Toast.LENGTH_SHORT).show()
+        swapFragment(TopicDetailFragment(), R.id.frame_container)
     }
 }

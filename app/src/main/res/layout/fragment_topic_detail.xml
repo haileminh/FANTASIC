@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+    <com.google.android.material.appbar.AppBarLayout
+            android:id="@+id/app_bar_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+            >
+
+        <com.google.android.material.appbar.CollapsingToolbarLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:contentScrim="@color/colorPrimary"
+                app:layout_scrollFlags="scroll|exitUntilCollapsed"
+                >
+
+            <ImageView
+                    android:id="@+id/backdrop"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/hotgril"
+                    app:layout_collapseMode="parallax"
+                    />
+
+            <androidx.appcompat.widget.Toolbar
+                    android:id="@+id/toolbar"
+                    android:layout_width="match_parent"
+                    android:layout_height="?attr/actionBarSize"
+                    app:layout_collapseMode="pin"
+                    app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+                    />
+
+        </com.google.android.material.appbar.CollapsingToolbarLayout>
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <ImageView
+            android:id="@+id/imgView"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/floating_action_btn_call"
+            android:layout_width="?attr/actionBarSize"
+            android:layout_height="?attr/actionBarSize"
+            android:layout_marginBottom="12dp"
+            android:layout_marginEnd="12dp"
+            android:src="@drawable/baseline_accessibility_black_18dp"
+            app:layout_anchor="@id/app_bar_layout"
+            app:layout_anchorGravity="bottom|right|end"/>
+
+    <androidx.core.widget.NestedScrollView
+            android:id="@+id/nestedScroolView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior">
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+            <TextView
+                    android:text="Tuy không thể phủ nhận được sự ảnh hưởng cũng như sự tuyệt vời của MVP nhưng luôn tồn tại các vấn đề phát sinh và chính các vấn đề này, đã cho ra đời các cấu trúc tiên tiến hơn và chúng ta phải công nhận rằng MVVM có một tầm quan trọng trong việc giải quyết một số vấn đề chúng ta gặp phải khi sử dụng các cấu trúc khác, đặc biệt là với MVP.
+
+Trên đây là những luận điểm cho thấy được tầm quan trọng cũng như cách mà MVVM giải quyết các vấn đề của MVP. Đương nhiên, ở một góc nhìn khác, có thể sẽ có nhiều hơn các vấn đề mà MVVM có thể giải quyết được, hoặc sẽ có các vấn đề xảy ra với MVVM và sẽ cần một cấu trúc khác thay thế.
+
+Suy cho cùng, không gì là hoàn hảo cả, khi một vấn đề được tìm thấy và nếu như chúng ta cảm thấy đó là điều cần thiết để thay đổi thì lúc đó có thể những thứ đi trước sẽ trở nên lạc hậu và chúng ta cần update những thứ mới (ở đây chính là các mô hình). Và sự hoàn hảo ở đây, cũng phụ thuộc vào quy mô của dự án mà chúng ta áp dụng, có thể đối với dự án này, MVVM là một sự lựa chọn thích hợp nhưng khi ở một dự án khác, nó có thể sẽ trở thành thảm họa.Tuy không thể phủ nhận được sự ảnh hưởng cũng như sự tuyệt vời của MVP nhưng luôn tồn tại các vấn đề phát sinh và chính các vấn đề này, đã cho ra đời các cấu trúc tiên tiến hơn và chúng ta phải công nhận rằng MVVM có một tầm quan trọng trong việc giải quyết một số vấn đề chúng ta gặp phải khi sử dụng các cấu trúc khác, đặc biệt là với MVP.
+
+Trên đây là những luận điểm cho thấy được tầm quan trọng cũng như cách mà MVVM giải quyết các vấn đề của MVP. Đương nhiên, ở một góc nhìn khác, có thể sẽ có nhiều hơn các vấn đề mà MVVM có thể giải quyết được, hoặc sẽ có các vấn đề xảy ra với MVVM và sẽ cần một cấu trúc khác thay thế.
+
+Suy cho cùng, không gì là hoàn hảo cả, khi một vấn đề được tìm thấy và nếu như chúng ta cảm thấy đó là điều cần thiết để thay đổi thì lúc đó có thể những thứ đi trước sẽ trở nên lạc hậu và chúng ta cần update những thứ mới (ở đây chính là các mô hình). Và sự hoàn hảo ở đây, cũng phụ thuộc vào quy mô của dự án mà chúng ta áp dụng, có thể đối với dự án này, MVVM là một sự lựa chọn thích hợp nhưng khi ở một dự án khác, nó có thể sẽ trở thành thảm họa.Tuy không thể phủ nhận được sự ảnh hưởng cũng như sự tuyệt vời của MVP nhưng luôn tồn tại các vấn đề phát sinh và chính các vấn đề này, đã cho ra đời các cấu trúc tiên tiến hơn và chúng ta phải công nhận rằng MVVM có một tầm quan trọng trong việc giải quyết một số vấn đề chúng ta gặp phải khi sử dụng các cấu trúc khác, đặc biệt là với MVP.
+
+Trên đây là những luận điểm cho thấy được tầm quan trọng cũng như cách mà MVVM giải quyết các vấn đề của MVP. Đương nhiên, ở một góc nhìn khác, có thể sẽ có nhiều hơn các vấn đề mà MVVM có thể giải quyết được, hoặc sẽ có các vấn đề xảy ra với MVVM và sẽ cần một cấu trúc khác thay thế.
+
+Suy cho cùng, không gì là hoàn hảo cả, khi một vấn đề được tìm thấy và nếu như chúng ta cảm thấy đó là điều cần thiết để thay đổi thì lúc đó có thể những thứ đi trước sẽ trở nên lạc hậu và chúng ta cần update những thứ mới (ở đây chính là các mô hình). Và sự hoàn hảo ở đây, cũng phụ thuộc vào quy mô của dự án mà chúng ta áp dụng, có thể đối với dự án này, MVVM là một sự lựa chọn thích hợp nhưng khi ở một dự án khác, nó có thể sẽ trở thành thảm họa."
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+
